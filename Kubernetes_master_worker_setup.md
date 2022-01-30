@@ -73,12 +73,15 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
+
 ```json
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
 ```
+
 sudo systemctl daemon-reload
+
 sudo systemctl restart docker
 
 ```
@@ -86,6 +89,7 @@ sudo systemctl restart docker
 #### Step 4: Dependecy for kubernetes
 
 ```sh
+
 apt-get install -y apt-transport-https curl
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -166,6 +170,7 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 #### Step 1. To deactivate a swap space, use the command swapoff
 
 ```sh
+
 swapoff -a
 
 ````
@@ -173,6 +178,7 @@ swapoff -a
 #### Step 2. Ubuntu 16.04 has reported issues with traffic being routed incorrectly due to iptables being bypassed. Ensure net.bridge.bridge-nf-call-iptables is set to 1 in the sysctl config,
 
 ```sh
+
 cat <<EOF > /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
@@ -203,12 +209,16 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
+
 ```json
+
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
 ```
+
 sudo systemctl daemon-reload
+
 sudo systemctl restart docker
 
 ```
@@ -216,6 +226,7 @@ sudo systemctl restart docker
 #### Step 4: Dependecy for kubernetes
 
 ```sh
+
 apt-get install -y apt-transport-https curl
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
