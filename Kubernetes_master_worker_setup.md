@@ -69,6 +69,16 @@ sudo apt-get install \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+sudo nano /etc/docker/daemon.json
+```
+{
+"exec-opts":["native.cgroupdriver=systemd"]
+}
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
 ```
 
 #### Step 4: Dependecy for kubernetes
@@ -190,6 +200,16 @@ sudo apt-get install \
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+sudo nano /etc/docker/daemon.json
+```
+{
+"exec-opts":["native.cgroupdriver=systemd"]
+}
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
 ```
 
 #### Step 4: Dependecy for kubernetes
@@ -213,6 +233,8 @@ apt-get update -y
 apt-get install -y kubelet kubeadm kubectl
 
 systemctl enable kubelet
+
+```
 
 #### Step 6: Paste the token from master node and you will get connected.
 
