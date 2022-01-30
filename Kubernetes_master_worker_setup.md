@@ -1,7 +1,7 @@
 
-# Kubernetes Master and Worker node Setup 
+# <ul> Kubernetes Master and Worker node Setup </ul>
 
-#Master Node Setup 
+# <ul> Master Node Setup </ul>
 
 #### Below ports must be open 
 
@@ -71,7 +71,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
-```
+```json
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
@@ -130,9 +130,9 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
 
 
-# Kubernetes Master and Worker node Setup 
+# <ul> Kubernetes Master and Worker node Setup </ul>
 
-# Worker Node Setup 
+# <ul> Worker Node Setup </ul>
 
 #### Below ports must be open 
 
@@ -202,7 +202,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
-```
+```json
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
