@@ -127,9 +127,8 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
 ```
 
-**enter**
 
-
+:shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit:
 
 
 # <ul> 2)- Worker Node Setup </ul>
