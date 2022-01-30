@@ -210,7 +210,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
 
-```json
+```JSON
 
 {
 "exec-opts":["native.cgroupdriver=systemd"]
