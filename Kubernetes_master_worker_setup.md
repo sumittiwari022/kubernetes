@@ -128,7 +128,7 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 ```
 
 
-:shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit: :shipit:
+:mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board:
 
 
 # <ul> 2)- Worker Node Setup </ul>
