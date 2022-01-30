@@ -1,7 +1,7 @@
 
 # <ul> Kubernetes Master and Worker node Setup </ul>
 
-# <ul> Master Node Setup </ul>
+# <ul> 1)- Master Node Setup </ul>
 
 #### Below ports must be open 
 
@@ -127,12 +127,12 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
 ```
 
+**enter**
 
 
 
-# <ul> Kubernetes Master and Worker node Setup </ul>
 
-# <ul> Worker Node Setup </ul>
+# <ul> 2)- Worker Node Setup </ul>
 
 #### Below ports must be open 
 
