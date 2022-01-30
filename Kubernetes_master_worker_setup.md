@@ -128,7 +128,7 @@ kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 ```
 
 
-:mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board::mortar_board:
+:octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat::octocat:
 
 
 # <ul> 2)- Worker Node Setup </ul>
