@@ -74,7 +74,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
 
-```json
+```
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
@@ -103,15 +103,17 @@ EOF
 
 ```sh
 
-apt-get update -y
+sudo apt-get update -y
 
-apt-get install -y kubelet kubeadm kubectl
+sudo apt-get install -y kubelet kubeadm kubectl
 
-systemctl enable kubelet
+sudo systemctl enable kubelet
 
-systemctl start kubelet
+sudo systemctl start kubelet
 
-kubeadm init --pod-network-cidr=192.168.0.0/16 /// range of Ip to be given
+sudo kubeadm init --pod-network-cidr=192.168.0.0/16 /// range of Ip to be given
+or
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
 mkdir -p $HOME/.kube 
 
@@ -130,6 +132,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```sh
 
 kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
+or
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
 ```
 
@@ -210,8 +214,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo nano /etc/docker/daemon.json
 
-```json
-
+```
 {
 "exec-opts":["native.cgroupdriver=systemd"]
 }
@@ -227,9 +230,10 @@ sudo systemctl restart docker
 
 ```sh
 
-apt-get install -y apt-transport-https curl
+sudo apt-get install -y apt-transport-https curl
 
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
 cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
@@ -240,11 +244,11 @@ EOF
 
 ```sh
 
-apt-get update -y
+sudo apt-get update -y
 
-apt-get install -y kubelet kubeadm kubectl
+sudo apt-get install -y kubelet kubeadm kubectl
 
-systemctl enable kubelet
+sudo systemctl enable kubelet
 
 ```
 
